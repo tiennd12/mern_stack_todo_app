@@ -8,7 +8,7 @@ const connectDB = async () => {
   }
 };
 
-const createConnectDB = async () => {
+const createConnectionDB = async () => {
   try {
     await mongoose.createConnection(process.env.DATABASE_URI, {
       useNewUrlParser: true,
@@ -19,4 +19,4 @@ const createConnectDB = async () => {
   }
 };
 
-module.exports = { connectDB, createConnectDB };
+module.exports = { connectDB, createConnectionDB };
